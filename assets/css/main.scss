@@ -17,27 +17,38 @@ $sidebar-order: 2;
 @import "default";
 
 /* [Rigor Fix] 레이아웃 겹침 및 링크 넘침 해결 */
+
+/* 1. 직함(Role)과 날짜(Time) 겹침 방지 */
 .item .upper-row {
     display: flex !important;
-    flex-wrap: wrap !important; 
+    flex-wrap: wrap !important; /* 공간 부족 시 날짜를 아래로 내림 */
     justify-content: space-between !important;
     align-items: flex-start !important;
+    position: relative !important;
     margin-bottom: 5px;
 }
 
 .item .meta {
-    /* [Rigor] 날짜가 제목 위로 떠오르지 않도록 위치를 고정합니다. */
+    /* 테마의 절대 위치 고정을 해제하여 겹침 차단 */
     position: static !important; 
     float: none !important;
+    display: inline-block !important;
     font-size: 14px;
     color: #999;
-    /* 제목이 길 때 날짜가 자연스럽게 다음 줄로 내려가도록 여백 추가 */
-    margin-left: auto; 
-    padding-left: 10px;
-    white-space: nowrap;
+    /* 제목이 길어 다음 줄로 갈 때 우측 정렬 유지 */
+    margin-left: auto !important; 
+    padding-left: 15px;
+    white-space: nowrap; /* 날짜 자체의 줄바꿈 방지 */
 }
 
+/* 2. 사이드바 링크 넘침 및 가독성 해결 */
 .sidebar .contact-list li {
-    word-break: break-all; /* LinkedIn 링크 넘침 방지 핵심 */
-    overflow-wrap: break-word;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    margin-bottom: 8px;
+}
+
+.sidebar .contact-list a {
+    font-size: 13px;
+    line-height: 1.4;
 }

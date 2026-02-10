@@ -15,33 +15,31 @@ sidebar:
   # Sidebar links
   email: hyungsu.cheong@insead.edu
   phone: "(+82)10-4951-2959"
-  timezone: KST(Korean Standard Timezone) # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  timezone: Seoul, Korea (KST)
   citizenship: Korean
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
+  website: https://hyungsucheong.github.io/ 
   linkedin: hyungsucheong
   github: HyungSuCheong
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
-  bluesky: #'@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: #'@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  bluesky: 
+  twitter: 
+  stack-overflow: 
   codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  goodreads: 
+  mastodon: 
+  hackerrank: 
+  leetcode: 
+  pdf: 
 
   languages:
     title: Languages
     info:
     - idiom: Korean
       level: Native
-
     - idiom: English
       level: Professional
-
     - idiom: Chinese
       level: HSK level 3
 
@@ -49,16 +47,8 @@ sidebar:
     title: Interests
     info:
     - item: Community building & Mentoring
-      link:
-
-
     - item: body weight lifting
-      link:
-
-
     - item: Cooking
-      link:
-
 
 career-profile:
   title: Career Profile
@@ -66,7 +56,8 @@ career-profile:
     Strategic Finance Lead with 10+ years of experience, specializing in the Healthcare/Pharma and Tech sectors. 
     Unique combination of Eli Lilly commercial finance expertise and hands-on M&A deal execution as a successful founder. 
     Proven track record in sourcing cross-border deals, conducting commercial due diligence for pharmaceutical assets, 
-    and driving value-creation initiatives for portfolio companies across Asia
+    and driving value-creation initiatives for portfolio companies across Asia.
+
 education:
   title: Education
   info:
@@ -74,17 +65,17 @@ education:
     university: INSEAD (Institut Européen d'Administration des Affaires)
     time: 2023 - 2023
     details: |
-      Focus in Corporate Finance and Investment    
-        - Pre-MBA intern at Maple Investment Partners & Cyrus Venture Investment
-        - Summer intern at Eli Lilly, deal valuation and financial projection
-        - VP of communication of Consulting Club and member of Healthcare Club and Global Leadership Club
+      Focus in Corporate Finance and Investment
+      - Pre-MBA intern at Maple Investment Partners & Cyrus Venture Investment
+      - Summer intern at Eli Lilly, deal valuation and financial projection
+      - VP of communication of Consulting Club and member of Healthcare Club and Global Leadership Club
     
   - degree: BSc in Mechanical Engineering
-    university: Georgia Insitute of Technology
+    university: Georgia Institute of Technology
     time: 2008 - 2013
     details: |
-        - Dean's list in 2008, 2009, and 2010; International Honors Club
-        - Samsung SDS Future technology and strategy department internship
+      - Dean's list in 2008, 2009, and 2010; International Honors Club
+      - Samsung SDS Future technology and strategy department internship
 
 experiences:
   title: Experiences
@@ -93,38 +84,40 @@ experiences:
     time: 2024 Jan - 2026 Jan
     company: Eli Lilly & Company
     details: |
-      -	Commercial Due Diligence & Strategy: Led financial and strategic evaluation for the Olumiant co-promotion partnership; modeled NPV scenarios and structured contract terms to optimize long-term portfolio profitability
-      -	Value Creation & Growth: Partnered with the IBU (International Business Unit) to reposition key immunology assets (Taltz), driving 22% YoY revenue growth through targeted market segmentation and ROI-based resource allocation
-      -	Portfolio Management: Managed financial planning for a $150M+ portfolio, providing data-backed insights on margin drivers and investment trade-offs to the APAC CFO
+      - **Commercial Due Diligence & Strategy**: Led financial and strategic evaluation for the Olumiant co-promotion partnership; modeled NPV scenarios and structured contract terms to optimize long-term portfolio profitability
+      - **Value Creation & Growth**: Partnered with the IBU (International Business Unit) to reposition key immunology assets (Taltz), driving 22% YoY revenue growth through targeted market segmentation and ROI-based resource allocation
+      - **Portfolio Management**: Managed financial planning for a $150M+ portfolio, providing data-backed insights on margin drivers and investment trade-offs to the APAC CFO
 
   - role: Founder & Head of Strategy
     time: 2016 Sep - 2022 Dec
     company: The Meta
     details: |
-      -	M&A Exit Execution: Orchestrated the entire M&A sell-side process without external bankers. Built the data room, defended valuation using multiples analysis, and successfully negotiated the term to close the sale to North American investors
-      -	Turnaround & Pivot: Returned to an operational role during a liquidity crisis (70% revenue drop); executed a strategic pivot to B2B Ed-Tech, secured $500K in new ARR, and achieved a break-even turnaround within 12 months
-      -	GTM & Pricing Strategy: Developed and tested tiered pricing models for new software products, optimizing the CAC-to-LTV ratio and verifying Product-Market Fit (PMF) through cohort analysis
+      - **M&A Exit Execution**: Orchestrated the entire M&A sell-side process without external bankers. Built the data room, defended valuation using multiples analysis, and successfully negotiated the term to close the sale to North American investors
+      - **Turnaround & Pivot**: Returned to an operational role during a liquidity crisis (70% revenue drop); executed a strategic pivot to B2B Ed-Tech, secured $500K in new ARR, and achieved a break-even turnaround within 12 months
+      - **GTM & Pricing Strategy**: Developed and tested tiered pricing models for new software products, optimizing the CAC-to-LTV ratio and verifying Product-Market Fit (PMF) through cohort analysis
 
   - role: Team Lead - Strategy Operations & New Business Development
     time: 2018 Apr - 2020 Dec
     company: VSGame
     details: |
-      -	Cross-Border Deal Structuring: Structured and negotiated a $5M Joint Venture (JV) with Tencent and FEG to launch a mobile franchise. Led financial modeling and term sheet negotiations in coordination with legal/tax advisors
-      -	Operational Turnaround: Overhauled the P&L of a 35-person business unit. Implemented a shared-service model and platform-based revenue streams, converting a $4M annual deficit into profitability within one year
+      - **Cross-Border Deal Structuring**: Structured and negotiated a $5M Joint Venture (JV) with Tencent and FEG to launch a mobile franchise. Led financial modeling and term sheet negotiations in coordination with legal/tax advisors
+      - **Operational Turnaround**: Overhauled the P&L of a 35-person business unit. Implemented a shared-service model and platform-based revenue streams, converting a $4M annual deficit into profitability within one year
+
   - role: General Manager 
     time: 2017 Jun - 2018 Apr
     company: VSGame
     details: |
-      -	Buy-Side Diligence: Led commercial and financial due diligence for the acquisition of Samsung Galaxy pro-game team; developed the investment thesis and post-merger integration (PMI) plan presented to the Board
-      -	Board Advisory: Advised Founder Kevin Chou (billionaire) as a media/marketing expert in board meetings; delivered financial analysis for M&A deals and crafted revenue generation strategies
+      - **Buy-Side Diligence**: Led commercial and financial due diligence for the acquisition of Samsung Galaxy pro-game team; developed the investment thesis and post-merger integration (PMI) plan presented to the Board
+      - **Board Advisory**: Advised Founder Kevin Chou (billionaire) as a media/marketing expert in board meetings; delivered financial analysis for M&A deals and crafted revenue generation strategies
 
   - role: Independent Consultant
     time: 2012 Jan - 2016 Aug
-    company: Cloud 9, Team Solomid, Quanitc Gaming, All-Killers, Creator community
+    company: Cloud 9, Team Solomid, Quantic Gaming, All-Killers, Creator community
     details: |
-      -	Revenue Optimization: Analyzed viewership and engagement metrics to build sustainable monetization models, optimizing unit economics for digital content products
-      -	Organizational Leadership: Bootstrapped and scaled a content consulting and production team of 20+ editors and 1 operations manager, establishing a remote workflow system that later evolved into The Meta
+      - **Revenue Optimization**: Analyzed viewership and engagement metrics to build sustainable monetization models, optimizing unit economics for digital content products
+      - **Organizational Leadership**: Bootstrapped and scaled a content consulting and production team of 20+ editors and 1 operations manager, establishing a remote workflow system that later evolved into The Meta
 
+# 주석 처리된 섹션들 (템플릿 유지)
 # certifications:
 #   title: Certifications
 #   list:
@@ -248,22 +241,18 @@ experiences:
 
 #       He is a great employee!
 
-skills:
-  title: Skills &amp; Proficiency
 
+skills:
+  title: Skills & Proficiency
   toolset:
   - name: Corporate Finance 
     level: 90%
-
   - name: FP&A & Strategic Planning
     level: 90%
-
   - name: AI Automation (n8n, Python, SQL)
     level: 80%
-
   - name: GTM & Pricing Strategy
     level: 80%
-
   - name: Project management
     level: 60%
 
