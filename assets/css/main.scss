@@ -18,16 +18,23 @@ $sidebar-order: 2;
 
 /* [Rigor Fix] 레이아웃 겹침 및 링크 넘침 해결 */
 .item .upper-row {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: flex-start;
+    display: flex !important;
+    flex-wrap: wrap !important; 
+    justify-content: space-between !important;
+    align-items: flex-start !important;
     margin-bottom: 5px;
 }
 
 .item .meta {
+    /* [Rigor] 날짜가 제목 위로 떠오르지 않도록 위치를 고정합니다. */
+    position: static !important; 
+    float: none !important;
     font-size: 14px;
     color: #999;
+    /* 제목이 길 때 날짜가 자연스럽게 다음 줄로 내려가도록 여백 추가 */
+    margin-left: auto; 
+    padding-left: 10px;
+    white-space: nowrap;
 }
 
 .sidebar .contact-list li {
