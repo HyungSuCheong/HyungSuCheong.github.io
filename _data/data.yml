@@ -4,7 +4,7 @@
 
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
@@ -13,12 +13,12 @@ sidebar:
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: hyungsu.cheong@insaed.edu
+  email: hyungsu.cheong@insead.edu
   phone: "(+82)10-4951-2959"
   timezone: KST(Korean Standard Timezone) # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: Korean
   website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: https://www.linkedin.com/in/hyungsucheong/
+  linkedin: hyungsucheong
   github: HyungSuCheong
   telegram: # add your nickname without '@' sign
   gitlab:
