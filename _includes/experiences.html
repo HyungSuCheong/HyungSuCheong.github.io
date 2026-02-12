@@ -14,24 +14,23 @@
 
     <div class="meta">
 
-      <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
-      </div><!--//upper-row-->
+      <div class="upper-row" style="display: block !important; margin-bottom: 5px;">
+        
+        <h3 class="job-title" style="display: block !important; width: 100% !important; margin-bottom: 0 !important; float: none !important;">
+            {{ experience.role }}
+        </h3>
 
-      <div class="company">{{ experience.company }}</div>
+        <div class="time" style="display: block !important; position: static !important; float: none !important; width: 100% !important; text-align: right !important; color: #777; margin-top: 2px;">
+            {{ experience.time }}
+        </div>
+      
+      </div><div class="company">{{ experience.company }}</div>
 
-    </div><!--//meta-->
-
-    {% if experience.details %}
+    </div>{% if experience.details %}
     <div class="details">
       {{ experience.details | markdownify }}
-    </div><!--//details-->
-    {% endif %}
+    </div>{% endif %}
 
-  </div><!--//item-->
-  {% endfor %}
+  </div>{% endfor %}
 
-</section><!--//section-->
-{% endif %}
-
+</section>{% endif %}
