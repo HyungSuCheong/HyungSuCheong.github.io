@@ -16,51 +16,50 @@ $sidebar-order: 2;
 @import "default";
 
 /* ==========================================================================
-   FINAL MASTER FIX: 수직 분리 및 겹침 제로 전략
+   FINAL MASTER FIX: 반응형 전환 속도 최적화 (Breakpoint Up)
    ========================================================================== */
 
-/* 1. 경력 사항: 제목과 날짜를 100% 위아래로 분리 */
+/* 1. 기본 상태: 날짜를 무조건 제목 아래로 배치 (겹침 원천 차단) */
 .item .upper-row {
-    display: block !important; /* 가로 배열(Flex)을 버리고 블록 구조 선택 */
+    display: flex !important;
+    flex-direction: column !important; /* 기본은 세로 배열 */
+    align-items: flex-start !important;
     position: relative !important;
     margin-bottom: 10px !important;
-    height: auto !important;
 }
 
-.item .upper-row h3,
-.item .upper-row .job-title {
-    display: block !important; /* 제목이 한 줄을 다 쓰게 함 */
+.item .job-title, .item h3 {
     width: 100% !important;
-    margin-bottom: 2px !important;
-    position: static !important;
-    line-height: 1.4 !important;
-    word-break: keep-all !important; /* 단어 단위 줄바꿈으로 깔끔하게 유지 */
+    word-break: keep-all !important;
     overflow-wrap: break-word !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2px !important;
 }
 
-.item .upper-row .meta {
-    display: block !important; /* 날짜를 다음 줄로 강제 이동 */
-    position: static !important; /* 절대 위치(absolute)를 완전히 제거 */
-    width: 100% !important;
-    text-align: right !important; /* 날짜는 우측 정렬하여 균형 유지 */
-    margin-top: 0 !important;
-    margin-bottom: 5px !important;
+.item .meta {
+    position: static !important;
+    display: block !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
     color: #999 !important;
     font-size: 13px !important;
-    float: none !important;
 }
 
-/* 2. 사이드바 교육 섹션 (성공적인 흰색 폰트 유지) */
-.sidebar .education .university, 
-.sidebar .education .degree, 
-.sidebar .education .time,
-.sidebar .education .details {
-    color: #ffffff !important;
-    display: block !important;
-    opacity: 1 !important;
-}
+/* 2. 전환 시점(Breakpoint) 앞당기기: 1024px(아이패드 가로/노트북) 이상에서만 옆으로 배치 */
+@media (min-width: 1024px) {
+    .item .upper-row {
+        flex-direction: row !important; /* 충분히 넓을 때만 가로 배열 */
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
 
-/* 3. 사이드바 링크 넘침 방지 */
-.sidebar .contact-list li {
-    word-break: break-all !important;
-}
+    .item .job-title, .item h3 {
+        width: auto !important;
+        max-width: 70% !important; /* 제목이 날짜 영역을 침범하지 않게 제한 */
+        margin-bottom: 0 !important;
+    }
+
+    .item .meta {
+        text-align: right !important;
+        margin-left: auto !important;
+        padding-left: 20px !important;
