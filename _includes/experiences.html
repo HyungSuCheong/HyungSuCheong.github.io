@@ -14,17 +14,23 @@
 
     <div class="meta">
 
-      <div class="upper-row" style="display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; align-items: baseline !important; width: 100% !important; margin-bottom: 5px; gap: 0.5rem !important;">
-        
-        <h3 class="job-title" style="margin: 0 !important; flex: 1 1 auto !important; word-break: break-word !important; overflow-wrap: break-word !important; line-height: 1.3 !important; float: none !important; min-width: 0 !important;">
-            {{ experience.role }}
-        </h3>
+      <table class="upper-row" style="width: 100% !important; border-collapse: collapse !important; border: none !important; margin-bottom: 5px; background: transparent !important; table-layout: auto !important;">
+        <tr style="border: none !important; background: transparent !important;">
+            
+            <td style="text-align: left !important; vertical-align: top !important; padding: 0 !important; padding-right: 15px !important; border: none !important;">
+                <h3 class="job-title" style="margin: 0 !important; font-size: 1.2rem !important; line-height: 1.3 !important; color: #333 !important;">
+                    {{ experience.role }}
+                </h3>
+            </td>
 
-        <div class="time" style="white-space: nowrap !important; flex: 0 0 auto !important; margin-left: auto !important; color: #777 !important; font-size: 14px !important; text-align: right !important; float: none !important; position: static !important;">
-            {{ experience.time }}
-        </div>
-      
-      </div><div class="company">{{ experience.company }}</div>
+            <td style="text-align: right !important; vertical-align: top !important; white-space: nowrap !important; width: 1% !important; padding: 0 !important; border: none !important;">
+                <div class="time" style="color: #777 !important; font-size: 14px !important; font-weight: normal !important; padding-top: 2px;">
+                    {{ experience.time }}
+                </div>
+            </td>
+
+        </tr>
+      </table><div class="company">{{ experience.company }}</div>
 
     </div>{% if experience.details %}
     <div class="details">
