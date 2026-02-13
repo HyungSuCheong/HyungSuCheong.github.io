@@ -15,7 +15,7 @@
     <div class="meta">
       <div class="upper-row" style="overflow: hidden; width: 100%; margin-bottom: 2px;">
         
-        <div class="time" style="float: right; color: #777; font-size: 14px; font-weight: normal; text-align: right; margin-top: 8px; margin-left: 15px;">
+        <div class="time" style="float: right; color: #777; font-size: 14px; font-weight: normal; text-align: right; margin-top: 9px !important; margin-left: 15px; padding-right: 2px;">
             {{ experience.time }}
         </div>
 
@@ -44,15 +44,10 @@
 </section>
 
 <style>
-/* 리스트 항목 간 가독성 유지 */
-.details ul li { 
-    margin-bottom: 5px !important; 
-}
-
-/* 모바일 대응: 화면 좁을 때 날짜가 아래로 자연스럽게 이동 */
+.details ul li { margin-bottom: 5px !important; }
 @media (max-width: 630px) {
     .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; }
-    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-left: 0 !important; margin-top: 2px !important; }
+    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-left: 0 !important; margin-top: 4px !important; padding-right: 0 !important; }
 }
 </style>
 {% endif %}
