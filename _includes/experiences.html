@@ -10,16 +10,16 @@
   </h2>
 
   {% for experience in experiences.info %}
-  <div class="item" style="margin-bottom: 28px;">
+  <div class="item">
 
     <div class="meta">
-      <div class="upper-row" style="overflow: hidden; width: 100%; margin-bottom: 4px;">
+      <div class="upper-row" style="overflow: hidden; width: 100%; margin-bottom: 2px;">
         
-        <div class="time" style="float: right; color: #97AAC3; font-size: 14px; font-weight: 500; text-align: right; margin-top: 6px; margin-left: 20px;">
+        <div class="time" style="float: right; color: #777; font-size: 14px; font-weight: normal; text-align: right; margin-top: 5px; margin-left: 15px;">
             {{ experience.time }}
         </div>
 
-        <h3 class="job-title" style="float: left; margin: 0; font-size: 1.45rem !important; font-weight: 700 !important; color: #2d3e50 !important; max-width: 68%; line-height: 1.25; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;">
+        <h3 class="job-title" style="float: left; margin: 0; font-size: 16px; font-weight: 900; color: #333; max-width: 65%; line-height: 1.5;">
             {{ experience.role }}
         </h3>
       
@@ -27,14 +27,14 @@
 
       <div style="clear: both;"></div>
 
-      <div class="company" style="font-size: 1.05rem !important; color: #586069 !important; font-weight: 600 !important; margin-bottom: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;">
+      <div class="company" style="font-size: 14px; color: #999; margin-bottom: 10px;">
           {{ experience.company }}
       </div>
 
     </div>
 
     {% if experience.details %}
-    <div class="details" style="line-height: 1.7; color: #424242; font-size: 0.9rem !important;">
+    <div class="details" style="font-size: 14px; line-height: 1.5; color: #666;">
       {{ experience.details | markdownify }}
     </div>
     {% endif %}
@@ -44,32 +44,15 @@
 </section>
 
 <style>
-/* 리스트 항목 간 가독성을 위한 여백 조정 */
+/* 리스트 가독성 조정 */
 .details ul li { 
-    margin-bottom: 8px !important; 
+    margin-bottom: 5px !important; 
 }
 
-/* 수치 강조를 위한 스타일 (Strong 태그 사용 시) */
-.details strong {
-    color: #2d3e50 !important;
-    font-weight: 700 !important;
-}
-
-/* 모바일 대응: 화면 폭이 630px 이하일 때 날짜를 안전하게 아래로 배치 */
+/* 모바일 대응 */
 @media (max-width: 630px) {
-    .upper-row h3.job-title { 
-        float: none !important; 
-        display: block !important; 
-        max-width: 100% !important; 
-        margin-bottom: 4px !important; 
-    }
-    .upper-row .time { 
-        float: none !important; 
-        display: block !important; 
-        text-align: left !important; 
-        margin-left: 0 !important; 
-        margin-bottom: 8px !important; 
-    }
+    .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; }
+    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-left: 0 !important; margin-top: 2px !important; }
 }
 </style>
 {% endif %}
