@@ -14,17 +14,27 @@
 
     <div class="meta">
 
-      <div class="upper-row" style="display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; align-items: baseline !important; width: 100% !important; margin-bottom: 5px;">
-        
-        <h3 class="job-title" style="margin: 0 !important; flex: 1 1 auto !important; min-width: 0 !important; word-break: break-word !important; overflow-wrap: break-word !important; line-height: 1.2 !important; float: none !important; font-size: 1.4rem !important; font-weight: 700 !important; color: #3F4650 !important; padding-right: 10px !important;">
-            {{ experience.role }}
-        </h3>
+      <table style="width: 100% !important; border-collapse: collapse !important; border: none !important; margin-bottom: 5px; table-layout: fixed !important;">
+        <tr style="border: none !important; background: transparent !important;">
+            
+            <td style="width: 75% !important; vertical-align: top !important; padding: 0 !important; padding-right: 10px !important; border: none !important;">
+                <h3 class="job-title" style="margin: 0 !important; font-size: 20px !important; font-weight: 700 !important; color: #333 !important; line-height: 1.2 !important; white-space: normal !important;">
+                    {{ experience.role }}
+                </h3>
+            </td>
 
-        <div class="time" style="white-space: nowrap !important; flex: 0 0 auto !important; margin-left: auto !important; color: #97AAC3 !important; font-size: 14px !important; text-align: right !important; float: none !important; position: static !important; font-weight: 500 !important;">
-            {{ experience.time }}
-        </div>
-      
-      </div><div class="company" style="font-size: 1rem !important; color: #97AAC3 !important; margin-bottom: 10px !important;">{{ experience.company }}</div>
+            <td style="width: 25% !important; vertical-align: top !important; text-align: right !important; padding: 0 !important; border: none !important;">
+                <span class="time" style="color: #777 !important; font-size: 14px !important; white-space: nowrap !important; display: inline-block !important;">
+                    {{ experience.time }}
+                </span>
+            </td>
+
+        </tr>
+      </table>
+
+      <div class="company" style="font-size: 16px !important; font-weight: 500 !important; color: #555 !important; margin-bottom: 10px !important;">
+          {{ experience.company }}
+      </div>
 
     </div>{% if experience.details %}
     <div class="details">
