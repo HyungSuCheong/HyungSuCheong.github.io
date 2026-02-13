@@ -34,7 +34,7 @@
     </div>
 
     {% if experience.details %}
-    <div class="details" style="line-height: 1.7; color: #424242; font-size: 0.95rem;">
+    <div class="details" style="line-height: 1.7; color: #424242; font-size: 0.9rem !important;">
       {{ experience.details | markdownify }}
     </div>
     {% endif %}
@@ -44,20 +44,32 @@
 </section>
 
 <style>
-/* 성과 수치 강조: 텍스트 내 숫자를 자동으로 굵게 만들 순 없으나, 
-   CSS 클래스를 통해 세부 조정을 위한 준비 */
+/* 리스트 항목 간 가독성을 위한 여백 조정 */
+.details ul li { 
+    margin-bottom: 8px !important; 
+}
+
+/* 수치 강조를 위한 스타일 (Strong 태그 사용 시) */
 .details strong {
     color: #2d3e50 !important;
     font-weight: 700 !important;
 }
 
-.details ul li { 
-    margin-bottom: 9px !important; 
-}
-
+/* 모바일 대응: 화면 폭이 630px 이하일 때 날짜를 안전하게 아래로 배치 */
 @media (max-width: 630px) {
-    .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; margin-bottom: 4px !important; }
-    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-left: 0 !important; margin-bottom: 8px !important; }
+    .upper-row h3.job-title { 
+        float: none !important; 
+        display: block !important; 
+        max-width: 100% !important; 
+        margin-bottom: 4px !important; 
+    }
+    .upper-row .time { 
+        float: none !important; 
+        display: block !important; 
+        text-align: left !important; 
+        margin-left: 0 !important; 
+        margin-bottom: 8px !important; 
+    }
 }
 </style>
 {% endif %}
