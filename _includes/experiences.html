@@ -10,46 +10,45 @@
   </h2>
 
   {% for experience in experiences.info %}
-  <div class="item">
-
-    <div class="meta">
-
-      <div class="upper-row" style="overflow: hidden; margin-bottom: 5px;">
+  <div class="item" style="margin-bottom: 30px;"> <div class="meta">
+      <div class="upper-row" style="overflow: hidden; margin-bottom: 2px;">
         
-        <h3 class="job-title" style="float: left; margin: 0; font-size: 1.4rem; font-weight: 700; color: #333; max-width: 75%; line-height: 1.2;">
+        <h3 class="job-title" style="float: left; margin: 0; font-size: 1.4rem; font-weight: 700; color: #2d3e50; max-width: 75%; line-height: 1.4; letter-spacing: -0.02em;">
             {{ experience.role }}
         </h3>
 
-        <div class="time" style="float: right; color: #777; font-size: 14px; font-weight: 500; text-align: right; margin-top: 2px;">
+        <div class="time" style="float: right; color: #6a737d; font-size: 14px; font-weight: 500; text-align: right; margin-top: 6px; font-family: 'Roboto', sans-serif;">
             {{ experience.time }}
         </div>
       
-      </div><div style="clear: both;"></div>
+      </div>
 
-      <div class="company" style="font-size: 1rem; color: #97AAC3; margin-bottom: 10px;">{{ experience.company }}</div>
+      <div style="clear: both;"></div>
 
-    </div>{% if experience.details %}
-    <div class="details">
+      <div class="company" style="font-size: 1.05rem; color: #586069; font-weight: 600; margin-bottom: 12px; margin-top: 2px;">
+          {{ experience.company }}
+      </div>
+
+    </div>
+
+    {% if experience.details %}
+    <div class="details" style="line-height: 1.6; color: #424242;">
       {{ experience.details | markdownify }}
-    </div>{% endif %}
+    </div>
+    {% endif %}
 
-  </div>{% endfor %}
+  </div>
+  {% endfor %}
+</section>
 
-</section><style>
+<style>
+/* 리스트 항목 간 간격 추가 (가독성 핵심) */
+.details ul li {
+    margin-bottom: 8px !important;
+}
 @media (max-width: 600px) {
-    .upper-row h3.job-title {
-        float: none !important;
-        display: block !important;
-        max-width: 100% !important;
-        margin-bottom: 2px !important;
-    }
-    .upper-row .time {
-        float: none !important;
-        display: block !important;
-        text-align: left !important;
-        margin-bottom: 5px !important;
-    }
+    .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; margin-bottom: 4px !important; }
+    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-bottom: 8px !important; }
 }
 </style>
-
 {% endif %}
