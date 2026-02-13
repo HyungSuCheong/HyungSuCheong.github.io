@@ -10,24 +10,24 @@
   </h2>
 
   {% for experience in experiences.info %}
-  <div class="item" style="margin-bottom: 30px;">
+  <div class="item" style="margin-bottom: 25px;">
 
     <div class="meta">
-      <div class="upper-row" style="overflow: hidden; margin-bottom: 2px;">
+      <div class="upper-row" style="overflow: hidden; width: 100%; margin-bottom: 2px;">
         
-        <h3 class="job-title" style="float: left; margin: 0; font-size: 1.4rem; font-weight: 700; color: #2d3e50; max-width: 75%; line-height: 1.4; letter-spacing: -0.01em; font-family: 'Georgia', 'Times New Roman', serif !important;">
-            {{ experience.role }}
-        </h3>
-
-        <div class="time" style="float: right; color: #6a737d; font-size: 14px; font-weight: 500; text-align: right; margin-top: 8px;">
+        <div class="time" style="float: right; color: #97AAC3; font-size: 14px; font-weight: 500; text-align: right; margin-top: 5px; margin-left: 15px;">
             {{ experience.time }}
         </div>
+
+        <h3 class="job-title" style="float: left; margin: 0; font-size: 1.4rem; font-weight: 700; color: #3F4650; max-width: 65%; line-height: 1.2; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;">
+            {{ experience.role }}
+        </h3>
       
       </div>
 
       <div style="clear: both;"></div>
 
-      <div class="company" style="font-size: 1.05rem; color: #586069; font-weight: 600; margin-bottom: 12px; margin-top: 2px; font-family: 'Georgia', 'Times New Roman', serif !important;">
+      <div class="company" style="font-size: 1rem; color: #97AAC3; font-weight: 500; margin-bottom: 8px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;">
           {{ experience.company }}
       </div>
 
@@ -44,10 +44,10 @@
 </section>
 
 <style>
-.details ul li { margin-bottom: 8px !important; }
-@media (max-width: 600px) {
-    .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; margin-bottom: 4px !important; }
-    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-bottom: 8px !important; }
+/* 모바일 대응: 화면이 좁아지면 날짜를 아래로 안전하게 내림 */
+@media (max-width: 630px) {
+    .upper-row h3.job-title { float: none !important; display: block !important; max-width: 100% !important; margin-bottom: 2px !important; }
+    .upper-row .time { float: none !important; display: block !important; text-align: left !important; margin-left: 0 !important; margin-bottom: 5px !important; }
 }
 </style>
 {% endif %}
